@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: django
+# Cookbook:: django
 # Spec:: default
 #
-# Copyright (c) 2016 The Authors, All Rights Reserved.
+# Copyright:: (c) 2016 The Authors, All Rights Reserved.
 
 require 'spec_helper'
 
@@ -24,6 +24,5 @@ describe 'django::install_virtualenv' do
     it 'installs virtualenv' do
       expect(chef_run).to run_execute('pip3 install virtualenv')
     end
-
   end
 end
